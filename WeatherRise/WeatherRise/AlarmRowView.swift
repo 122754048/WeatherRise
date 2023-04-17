@@ -9,7 +9,7 @@ struct AlarmRowView: View {
                 Text(alarmObject.alarm.formattedTime)
                     .font(.title2)
                     .bold()
-                Text("Label: \(alarmObject.alarm.label)")
+                TextField("Label", text: $alarmObject.label.wrappedValue)
             }
             Spacer()
             Toggle("", isOn: $alarmObject.isEnabled)
