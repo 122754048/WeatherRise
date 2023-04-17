@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AlarmRowView: View {
-    @ObservedObject var alarmObject: AlarmObject
+    @ObservedObject var alarmObject: Alarm
 
     var body: some View {
         HStack {
